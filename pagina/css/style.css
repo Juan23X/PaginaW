@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+  }
+  
+  /* Estilos para el main */
+  main.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  
+  /* Estilos para la primera sección */
+  main.profile section:first-child {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile__avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile__name {
+    margin: 0;
+    color: #333;
+    font-size: 2em;
+  }
+  
+  .profile__city,
+  .profile__description {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Estilos para la segunda sección */
+  main.profile section:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile__btn {
+    padding: 15px;
+    background-color: #b8b8b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile__btn:hover {
+    background-color: #696969;
+  }
+  
+  /* Estilos adicionales para mejorar la apariencia general */
+  h1, p {
+    margin: 0;
+  }
+  
+  /* Estilos para responsividad */
+  @media only screen and (max-width: 768px) {
+    main.profile {
+      flex-direction: column;
+    }
+  
+    main.profile section {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
